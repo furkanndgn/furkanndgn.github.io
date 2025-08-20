@@ -91,6 +91,9 @@
             background: #f8f9fa;
             border-radius: 8px;
             border-left: 4px solid #007AFF;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
         
         .app-name {
@@ -101,6 +104,23 @@
         
         .app-description {
             color: #666;
+        }
+        
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .app-content {
+            flex: 1;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
         }
         
         footer {
@@ -135,6 +155,12 @@
                     <span class="icon">📧</span>
                     <a href="mailto:furkndognn@gmail.com">furkndognn@gmail.com</a>
                 </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="#0077B5">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/furkanndgn" target="_blank">LinkedIn</a>
+                </div>
                 <!-- Optional: Add more contact methods
                 <div class="contact-item">
                     <span class="icon">🐦</span>
@@ -147,10 +173,12 @@
         <div class="section">
             <h2>Apps</h2>
             <div class="app-list">
-                <img src="images/byebuddy-logo.svg" alt="ByeBuddy" class="app-icon">
                 <div class="app-item">
-                    <div class="app-name">ByeBuddy</div>
-                    <div class="app-description">Declutter your contacts — one swipe at a time</div>
+                    <img src="images/byebuddy-logo.svg" alt="ByeBuddy" class="app-icon">
+                    <div class="app-content">
+                        <div class="app-name">ByeBuddy</div>
+                        <div class="app-description">Declutter your contacts — one swipe at a time</div>
+                    </div>
                 </div>
                 <!-- Add more apps as needed
                 <div class="app-item">
@@ -160,12 +188,6 @@
                 -->
             </div>
         </div>
-        
-        <div class="section">
-            <h2>Privacy Policy</h2>
-            <p>I respect your privacy. My apps do not collect, store, or share any personal data. All data remains on your device.</p>
-        </div>
-        
         <footer>
             <p>&copy; 2024 Furkan Dogan. All rights reserved.</p>
         </footer>
